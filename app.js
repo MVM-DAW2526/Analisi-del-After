@@ -8,7 +8,6 @@ const consumicions = [
 ];
 
 const llistaFinal = consumicions 
-.filter(n => n.preu > 50)
-.map(n => n.nom ? `${n.nom} CARO 💸` : `${n.nom} ACCEPTABLE ✅`);
+.map(n => n.preu > 10 ? `${n.nom} CARO` : `${n.nom} ACCEPTABLE`);
 
 console.log(llistaFinal);
